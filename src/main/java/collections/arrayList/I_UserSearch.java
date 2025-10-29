@@ -17,6 +17,8 @@ public class I_UserSearch {
         userNames.add("Diana");
         userNames.add("admin");
 
+        String searchName = "admin";
+
         // Print list of usernames
         System.out.println("List of users:");
         for (String name : userNames) {
@@ -25,21 +27,19 @@ public class I_UserSearch {
         System.out.println();
 
         // call method with a list of users
-        searchAdmin(userNames);
+        searchByName(userNames, searchName);
         System.out.println();
 
         userNames.remove("admin");
-        System.out.println();
 
-        searchAdmin(userNames);
+        searchByName(userNames, searchName);
     }
 
-    static void searchAdmin(ArrayList<String> userList) {
-        String searchName = "admin";
-        boolean containsAdmin = userList.contains(searchName);
+    static void searchByName(ArrayList<String> userList, String searchName) {
+        boolean containsSearchName = userList.contains(searchName);
 
         System.out.println("Search for \"" + searchName + "\":");
-        if (containsAdmin) {
+        if (containsSearchName) {
             System.out.println("There is \"" + searchName + "\" in the list");
         } else {
             System.out.println("There is NO \"" + searchName + "\" in the list");

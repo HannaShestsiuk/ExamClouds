@@ -12,12 +12,13 @@ import java.util.List;
 public class II_ConditionalRemoval {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>(Arrays.asList(2, 11, 8, 18, 5, 100, 10));
+        int boundaryValue = 10;
         System.out.println("Initial numbers list: " + numbers);
-        removeLessThan(numbers);
+        removeLessThanBoundary(numbers, boundaryValue);
         System.out.println("Numbers after removal: " + numbers);
     }
 
-    static void removeLessThan(List<Integer> list){
-        list.removeIf(number -> number < 10);
+    static void removeLessThanBoundary(List<Integer> list, int boundaryValue){
+        list.removeIf(number -> number < boundaryValue);
     }
 }
