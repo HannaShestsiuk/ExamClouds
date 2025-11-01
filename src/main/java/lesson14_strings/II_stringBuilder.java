@@ -46,6 +46,6 @@ public class II_stringBuilder {
 
     private static void replaceEqualsChar(StringBuilder stringBuilder){
         stringBuilder.replace(stringBuilder.indexOf("="), stringBuilder.indexOf("=") + 1, "равно");
-        System.out.println(stringBuilder);;
+        System.out.println(stringBuilder);
     }
 }

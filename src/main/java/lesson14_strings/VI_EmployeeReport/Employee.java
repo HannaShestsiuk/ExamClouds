@@ -4,7 +4,7 @@ public class Employee {
     String fullName;
     double salary;
     static int count = 1;
-    int id = count;
+    int id;
 
     public Employee(String fullName, double salary, int id){
         ++count;
