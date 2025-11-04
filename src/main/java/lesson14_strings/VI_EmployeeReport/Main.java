@@ -20,5 +20,9 @@ public class Main {
         };
 
         Report.generateReport(employees);
+
+        for (Employee e : employees) {
+            e.writeReportToFile();
+        }
     }
 }
