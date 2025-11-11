@@ -26,9 +26,11 @@ public class I_CredentialsValidator {
             }
             if (password == null
                     || !password.matches("[a-zA-Z0-9_]+")
-                    || password.length() >= 20
-                    || !password.equals(confirmPassword)) {
-                throw new WrongPasswordException("Password should contain only letters, digits, underscore, be < 20 characters, and match confirmPassword.");
+                    || password.length() >= 20) {
+                throw new WrongPasswordException("Password should contain only letters, digits, underscore, be < 20 characters");
+            }
+            if (!password.equals(confirmPassword)){
+                throw new WrongPasswordException("Password should match confirmPassword.");
             }
             System.out.println("User is signed in.");
             return true;
