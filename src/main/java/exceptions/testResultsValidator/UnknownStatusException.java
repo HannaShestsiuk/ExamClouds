@@ -1,8 +1,8 @@
 package exceptions.testResultsValidator;
 
-public class UnknownStatusException extends Exception{
-    public UnknownStatusException() {}
-    public UnknownStatusException(String message) {
+class UnknownStatusException extends Exception{
+    UnknownStatusException() {}
+    UnknownStatusException(String message) {
         super(message);
     }
 }

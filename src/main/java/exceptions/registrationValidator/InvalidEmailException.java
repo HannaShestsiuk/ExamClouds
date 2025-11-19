@@ -1,8 +1,8 @@
 package exceptions.registrationValidator;
 
-public class InvalidEmailException extends Exception{
-    public InvalidEmailException(){}
-    public InvalidEmailException(String message){
+class InvalidEmailException extends Exception{
+    InvalidEmailException(){}
+    InvalidEmailException(String message){
         super(message);
     }
 }

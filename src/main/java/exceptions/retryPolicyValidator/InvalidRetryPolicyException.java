@@ -1,8 +1,8 @@
 package exceptions.retryPolicyValidator;
 
-public class InvalidRetryPolicyException extends Exception{
-    public InvalidRetryPolicyException(){}
-    public InvalidRetryPolicyException(String message){
+class InvalidRetryPolicyException extends Exception{
+    InvalidRetryPolicyException(){}
+    InvalidRetryPolicyException(String message){
         super(message);
     }
 }

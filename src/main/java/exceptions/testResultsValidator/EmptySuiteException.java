@@ -1,8 +1,8 @@
 package exceptions.testResultsValidator;
 
-public class EmptySuiteException extends Exception{
-    public EmptySuiteException() {}
-    public EmptySuiteException(String message) {
+class EmptySuiteException extends Exception{
+    EmptySuiteException() {}
+    EmptySuiteException(String message) {
         super(message);
     }
 }

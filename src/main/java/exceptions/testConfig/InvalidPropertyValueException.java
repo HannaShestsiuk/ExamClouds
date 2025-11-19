@@ -1,8 +1,8 @@
 package exceptions.testConfig;
 
-public class InvalidPropertyValueException extends Exception{
-    public InvalidPropertyValueException(){}
-    public InvalidPropertyValueException(String message){
+class InvalidPropertyValueException extends Exception{
+    InvalidPropertyValueException(){}
+    InvalidPropertyValueException(String message){
         super(message);
     }
 }

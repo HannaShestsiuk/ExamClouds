@@ -1,8 +1,8 @@
 package exceptions.registrationValidator;
 
-public class PasswordMismatchException extends Exception{
-    public PasswordMismatchException(){}
-    public PasswordMismatchException(String message){
+class PasswordMismatchException extends Exception{
+    PasswordMismatchException(){}
+    PasswordMismatchException(String message){
         super(message);
     }
 }

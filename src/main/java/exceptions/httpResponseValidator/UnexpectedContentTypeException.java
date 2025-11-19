@@ -1,8 +1,8 @@
 package exceptions.httpResponseValidator;
 
-public class UnexpectedContentTypeException extends Exception{
-    public UnexpectedContentTypeException(){}
-    public UnexpectedContentTypeException(String message){
+class UnexpectedContentTypeException extends Exception{
+    UnexpectedContentTypeException(){}
+    UnexpectedContentTypeException(String message){
         super(message);
     }
 }

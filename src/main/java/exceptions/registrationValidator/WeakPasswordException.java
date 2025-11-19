@@ -1,8 +1,8 @@
 package exceptions.registrationValidator;
 
-public class WeakPasswordException extends Exception{
-    public WeakPasswordException(){}
-    public WeakPasswordException(String message){
+class WeakPasswordException extends Exception{
+    WeakPasswordException(){}
+    WeakPasswordException(String message){
         super(message);
     }
 }

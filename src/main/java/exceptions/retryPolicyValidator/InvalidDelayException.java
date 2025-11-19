@@ -1,8 +1,8 @@
 package exceptions.retryPolicyValidator;
 
-public class InvalidDelayException extends Exception{
-    public InvalidDelayException(){}
-    public InvalidDelayException(String message){
+class InvalidDelayException extends Exception{
+    InvalidDelayException(){}
+    InvalidDelayException(String message){
         super(message);
     }
 }
