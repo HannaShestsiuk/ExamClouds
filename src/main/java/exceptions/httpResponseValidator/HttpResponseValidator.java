@@ -20,6 +20,12 @@ public class HttpResponseValidator {
             if(statusCode != 200 && statusCode != 201 && statusCode != 204){
                 throw new UnexpectedStatusCodeException("Unexpected Status Code: " + statusCode);
             }
+
+            if (statusCode == 204) {
+                System.out.println("Valid HTTP Response (204 No Content).");
+                return true;
+            }
+
             if( contentType == null || !contentType.startsWith("application/json")){
                 throw new UnexpectedContentTypeException("Unexpected Content-Type: " + contentType + ". application/json is expected.");
             }
